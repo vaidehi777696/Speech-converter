@@ -1,0 +1,8 @@
+from gtts import gTTS
+import os
+file1=open('demo.txt','r').read()
+language='en'
+
+output=gTTS(text=file1,lang='en',slow=False)
+output.save("output.mp3")
+os.system("start output.mp3")
